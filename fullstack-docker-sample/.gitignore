@@ -1,0 +1,12 @@
+node_modules
+.env
+dist
+build
+.DS_Store
+
+*.env
+docker-compose.override.yml
+
+.vscode/
+.idea/
+*.iml
