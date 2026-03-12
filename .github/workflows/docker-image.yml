@@ -25,8 +25,8 @@ jobs:
       # Step 3: Build the Docker image
       - name: Build Docker image
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/docker_sample/frontend-app:latest ./frontend
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/docker_sample/backend-app:latest ./backend
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/frontend-app:latest ./fullstack-docker-sample/frontend
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/backend-app:latest ./fullstack-docker-sample/backend
 
       # Step 4: Push the Docker image to Docker Hub
       - name: Push Docker image
